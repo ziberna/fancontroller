@@ -1,0 +1,11 @@
+Features:
+- makes sure fancontrol starts (babysitter mode)
+- controls fans on its own (rouge mode)
+  - controls until:
+    - temp and speed is normal
+    - fancontrol is running
+    - indefinitely
+  - min and max PWM setting
+  - min and max TEMP setting
+
+Usage: fancontroller [babysitter | rouge [ | until-fancontrol | indefinite]]

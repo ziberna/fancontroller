@@ -75,7 +75,7 @@ function babysitter() {
 
 function rouge() {
     tries=0
-    until pwm_sanity && ( [ "$1" != "until-fancontrol" ] || fancontrol_running ) && [ "$1" != "infinite" ]
+    until pwm_sanity && ( [ "$1" != "until-fancontrol" ] || fancontrol_running ) && [ "$1" != "indefinite" ]
     do
         tries=$((++tries))
         if [ $((tries % 10)) -eq 0 ]; then
@@ -117,7 +117,7 @@ case "$1" in
         rouge $2
         ;;
     *)
-        echo "Usage: fancontroller [babysitter | rouge [infinite | until-fancontrol]]"
+        echo "Usage: fancontroller [babysitter | rouge [ | until-fancontrol | indefinite]]"
 	;;
 esac
 
