@@ -1,4 +1,6 @@
-Features:
+Features
+========
+
 - makes sure fancontrol starts (babysitter mode)
 - controls fans on its own (rouge mode)
   - controls until:
@@ -8,4 +10,16 @@ Features:
   - min and max PWM setting
   - min and max TEMP setting
 
-Usage: fancontroller [babysitter | rouge [ | until-fancontrol | indefinite]]
+
+Usage
+=====
+
+fancontroller [babysitter | rouge [ | until-fancontrol | indefinite]]
+
+
+Tips
+====
+
+1. Add 'fancontroller babysitter' to /etc/rc.local
+2. Add 'fancontroller rouge until-fancontrol' to 'stop' in /etc/rc.d/fancontrol
+   (see file fancontrol.daemon-script)
