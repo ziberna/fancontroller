@@ -113,10 +113,12 @@ function disable() {
 
 function ac_speed() {
     sudo cp /etc/fancontrol.ac /etc/fancontrol
+    rc.d restart fancontrol
 }
 
 function batt_speed() {
     sudo cp /etc/fancontrol.batt /etc/fancontrol
+    rc.d restart fancontrol
 }
 
 am_i_root
@@ -138,7 +140,7 @@ case "$1" in
         batt_speed
         ;;
     *)
-        echo "Usage: fancontroller [babysitter | rouge [ | until-fancontrol | indefinite]]"
+        echo "Usage: fancontroller [babysitter | rouge [ | until-fancontrol | indefinite] | ac-speed | batt-speed]"
 	;;
 esac
 
