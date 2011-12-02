@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author: Jure Ziberna
 
 # interval in seconds
 INTERVAL=5
