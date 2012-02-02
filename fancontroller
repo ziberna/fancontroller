@@ -156,7 +156,7 @@ case "$1" in
         batt_speed
         ;;
     *)
-        echo "Usage: fancontroller [babysitter | rouge [ | until-fancontrol | indefinite] | ac-speed | batt-speed]"
+        echo "Usage: fancontroller [babysitter | rouge [ | until-fancontrol | indefinite] | ac-speed | batt-speed | disable]"
 	;;
 esac
 
